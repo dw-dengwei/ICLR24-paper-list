@@ -152,13 +152,13 @@ function updateDisplay() {
     workshop: '#FFFFCC',
   };
   for (const cell of decisionCells) {
-    if (cell.textContent.indexOf('Oral') !== -1 || cell.textContent.indexOf('Spotlight') !== -1 || cell.textContent.indexOf('Talk') !== -1) {
+    if (cell.textContent.indexOf('oral') !== -1 || cell.textContent.indexOf('spotlight') !== -1 || cell.textContent.indexOf('Talk') !== -1) {
       cell.style.background = decisionColors['oral'];
-    } else if (cell.textContent.indexOf('Reject') !== -1) {
+    } else if (cell.textContent.indexOf('Reject') !== -1 || cell.textContent.indexOf('no decision') !== -1) {
       cell.style.background = decisionColors['reject'];
-    } else if (cell.textContent.indexOf('Poster') !== -1) {
+    } else if (cell.textContent.indexOf('poster') !== -1) {
       cell.style.background = decisionColors['poster'];
-    } else if (cell.textContent.indexOf('Workshop') !== -1) {
+    } else if (cell.textContent.indexOf('workshop') !== -1) {
       cell.style.background = decisionColors['workshop'];
     } else {
       cell.style.background = '';
